@@ -54,7 +54,7 @@ router.delete('/:id', validateProjectId, async (req, res) => {
         res.status(500).json({
             message: 'Failed to delete project',
             error: error.message,
-            stack: error.stack, 
+            stack: error.stack,  
     });
     }
 });
